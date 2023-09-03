@@ -14,7 +14,7 @@ public class SupplyAsyncDemo {
 
     public List<Employee> getEmployees() throws ExecutionException, InterruptedException {
         CompletableFuture<List<Employee>> supplyAsync = CompletableFuture.supplyAsync(
-                () ->  {
+                () -> {
                     System.out.println("Thread: " + Thread.currentThread().getName());
                     return EmployeeDB.fetchEmployee();
                 });
@@ -24,7 +24,7 @@ public class SupplyAsyncDemo {
     public List<Employee> getEmployeesWithExecutor() throws ExecutionException, InterruptedException {
         Executor executor = Executors.newFixedThreadPool(10);
         CompletableFuture<List<Employee>> supplyAsync = CompletableFuture.supplyAsync(
-                () ->  {
+                () -> {
                     System.out.println("Thread: " + Thread.currentThread().getName());
                     return EmployeeDB.fetchEmployee();
                 }, executor);

@@ -12,4 +12,6 @@ public class Employee {
     private String empId;
     private String firstName;
     private String lastName;
+    private String newJoiner;
+    private String learningPending;
 }

@@ -58,15 +58,15 @@ public class RunAsyncDemo {
         CompletableFuture<Void> runAsync = CompletableFuture.runAsync(
                 () -> {
                     try {
-                    List<Employee> employees = mapper.readValue(jsonFile, new TypeReference<List<Employee>>() {
-                    });
-                    //logic here to save the result
-                    System.out.println("Thread :" + Thread.currentThread().getName());
-                    employees.stream().forEach(System.out::println);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
+                        List<Employee> employees = mapper.readValue(jsonFile, new TypeReference<List<Employee>>() {
+                        });
+                        //logic here to save the result
+                        System.out.println("Thread :" + Thread.currentThread().getName());
+                        employees.stream().forEach(System.out::println);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
         return runAsync.get();
     }
 

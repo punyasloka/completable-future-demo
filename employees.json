@@ -2,22 +2,30 @@
   {
     "empId":"101",
     "firstName":"Name1",
-    "lastName": "Lastname"
+    "lastName": "Lastname",
+    "newJoiner":"TRUE",
+    "learningPending": "TRUE"
   },
   {
     "empId":"102",
     "firstName":"Name2",
-    "lastName": "Lastname2"
+    "lastName": "Lastname2",
+    "newJoiner":"TRUE",
+    "learningPending": "TRUE"
   },
   {
     "empId":"103",
     "firstName":"Name3",
-    "lastName": "Lastname3"
+    "lastName": "Lastname3",
+    "newJoiner":"TRUE",
+    "learningPending": "TRUE"
   },
   {
     "empId":"104",
     "firstName":"Name4",
-    "lastName": "Lastname4"
+    "lastName": "Lastname4",
+    "newJoiner":"FALSE",
+    "learningPending": "FALSE"
   }
 
 ]
